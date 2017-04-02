@@ -1,7 +1,5 @@
 # API Testing Using Selenium WebDriver
 
----
-
 **What is API :**
 
 An application-programming interface \(API\) is a set of programming instructions and standards for
@@ -40,7 +38,7 @@ Application contentType : Json
 
 Objective : To validate Address : Chicago, IL, USA.
 
-GoogleMaps API : http://maps.googleapis.com/maps/api/geocode/json?address=chicago&sensor=false
+GoogleMaps API : [http://maps.googleapis.com/maps/api/geocode/json?address=chicago&sensor=false](http://maps.googleapis.com/maps/api/geocode/json?address=chicago&sensor=false)
 
 We can easily parse Json using “json-lib-2.4-jdk15.jar” Download from here…!
 
@@ -71,7 +69,7 @@ conn.setRequestMethod(“GET”);
 conn.setRequestProperty(“Accept”, “application/json”);
 
 if (conn.getResponseCode() != ) {
-	throw new RuntimeException(” HTTP error code : ”+ conn.getResponseCode());
+    throw new RuntimeException(” HTTP error code : ”+ conn.getResponseCode());
 }
 
 Scanner scan = new Scanner(url.openStream());
@@ -109,12 +107,9 @@ e.printStackTrace();
 e.printStackTrace();
 }
 }
-
 ```
 
 That’s it, now you know how to convert JsonObject to Java Object and use it in your Selenium snippet.
 
-You can practice using API : http://restcountries.eu/rest/v1
-
-
+You can practice using API : [http://restcountries.eu/rest/v1](http://restcountries.eu/rest/v1)
 

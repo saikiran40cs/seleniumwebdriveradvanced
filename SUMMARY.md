@@ -1,5 +1,5 @@
 # Summary
 
 * [Preface](README.md)
-* [First Chapter](chapter1.md)
+* [1. API Testing Using Selenium WebDriver](chapter1.md)
 
