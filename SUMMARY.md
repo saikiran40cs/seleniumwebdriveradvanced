@@ -5,4 +5,5 @@
   * [1.1 Code Snippet for API testing](chapter1/11-code-snippet.md)
 * [2. Advanced Profiles](advanced-profiles.md)
   * [2.1 Profile for Firefox Browser ](advanced-profiles/21-profile-for-firefox-browser.md)
+  * [2.2 Profile for Chrome Browser](advanced-profiles/22-profile-for-chrome-browser.md)
 

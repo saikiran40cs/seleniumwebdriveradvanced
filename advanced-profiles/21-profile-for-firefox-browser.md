@@ -65,7 +65,31 @@ public class ProxiesCertificates {
         fp.setPreference("setAcceptUntrustedCertificates", "true");
         fp.setAcceptUntrustedCertificates(true);
         fp.setAssumeUntrustedCertificateIssuer(true);
-
+        
+        fp.clean(null);
+        //0- Desktop, 1-Browser's Default Path , 2- Custom Download Path
+        fp.setPreference("browser.download.folderList", 2);	
+        fp.setPreference("plugin.scan.plid.all", false);
+        fp.setPreference("pdfjs.disabled", true);
+        fp.setPreference("plugin.scan.Acrobat", "99");
+        fp.setPreference("marionette.logging", false);
+        fp.setPreference("browser.download.dir", CONSTANTS.STRDOWNLOADPATH);
+        fp.setPreference("browser.download.manager.alertOnEXEOpen", false);
+        fp.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream;application/pdf");
+        fp.setPreference("browser.download.manager.showWhenStarting", false);
+        fp.setPreference("browser.download.manager.focusWhenStarting", false);
+        //"application/msword,application/csv,text/csv,image/png ,image/jpeg, text/html,text/plain");
+        fp.setPreference("browser.download.useDownloadDir", true);
+        fp.setPreference("browser.helperApps.alwaysAsk.force", false);
+        fp.setPreference("browser.download.manager.alertOnEXEOpen", false);
+        fp.setPreference("browser.download.manager.closeWhenDone", false);
+        fp.setPreference("browser.download.manager.showAlertOnComplete", false);
+        fp.setPreference("browser.download.manager.useWindow", false);
+        fp.setPreference("browser.download.manager.showWhenStarting", false);
+        fp.setPreference("network.proxy.type", proxyType);
+        fp.setPreference("services.sync.prefs.sync.browser.download.manager.showWhenStarting", false);
+        fp.setPreference("plugin.disable_full_page_plugin_for_types", "application/pdf");
+        
         // Create browser instance with above mentioned requsites
         driver = new FirefoxDriver(new FirefoxBinary(), fp, capabilities);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
