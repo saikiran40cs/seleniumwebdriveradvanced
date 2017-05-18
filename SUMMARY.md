@@ -7,4 +7,6 @@
   * [2.1 Profile for Firefox Browser ](advanced-profiles/21-profile-for-firefox-browser.md)
   * [2.2 Profile for Chrome Browser](advanced-profiles/22-profile-for-chrome-browser.md)
   * [2.3 Profile for IE Browser](advanced-profiles/23-profile-for-ie-browser.md)
+  * [2.4 Profile for Safari Browser](advanced-profiles/24-profile-for-safari-browser.md)
+  * [2.5 Profile for Opera Browser](advanced-profiles/25-profile-for-opera-browser.md)
 
