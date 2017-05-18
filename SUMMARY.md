@@ -3,7 +3,7 @@
 * [Preface](README.md)
 * [1. API Testing Using Selenium WebDriver](chapter1.md)
   * [1.1 Code Snippet for API testing](chapter1/11-code-snippet.md)
-* [2. Advanced Profiles](advanced-profiles.md)
+* [2. Advanced Profiles for Browsers](advanced-profiles.md)
   * [2.1 Profile for Firefox Browser ](advanced-profiles/21-profile-for-firefox-browser.md)
   * [2.2 Profile for Chrome Browser](advanced-profiles/22-profile-for-chrome-browser.md)
   * [2.3 Profile for IE Browser](advanced-profiles/23-profile-for-ie-browser.md)
