@@ -9,4 +9,8 @@
   * [2.3 Profile for IE Browser](advanced-profiles/23-profile-for-ie-browser.md)
   * [2.4 Profile for Safari Browser](advanced-profiles/24-profile-for-safari-browser.md)
   * [2.5 Profile for Opera Browser](advanced-profiles/25-profile-for-opera-browser.md)
+* [3. TestNG](testng.md)
+  * [3.1 Sample TestNG class](testng/31-sample-testng-class.md)
+* [4. ExtentReports](extentreports.md)
+  * 3.1 Sample Extent Reports
 
