@@ -5,6 +5,7 @@ This book is a tutorial on how to use selenium for web application automation te
 1. Selenium API,
 2. testNG
 3. ExtentReports
+4. SoapUI
 
 
 

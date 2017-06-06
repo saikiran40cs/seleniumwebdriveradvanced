@@ -13,4 +13,7 @@
   * [3.1 Sample TestNG class](testng/31-sample-testng-class.md)
 * [4. ExtentReports](extentreports.md)
   * [4.1 Sample Extent Reports](extentreports/41-sample-extent-reports.md)
+* [5. SoapUI](soapui.md)
+  * [5.1 Add selenium jars to soapUI](soapui/51-add-selenium-jars-to-soapui.md)
+  * [5.2 Run selenium tests](soapui/52-run-selenium-tests.md)
 
