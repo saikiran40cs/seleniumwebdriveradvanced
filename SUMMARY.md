@@ -16,4 +16,5 @@
 * [5. SoapUI](soapui.md)
   * [5.1 Add selenium jars to soapUI](soapui/51-add-selenium-jars-to-soapui.md)
   * [5.2 Run selenium tests](soapui/52-run-selenium-tests.md)
+  * [5.3 Data Driven Testing using SoapUI](soapui/data-driven-testing-using-soapui.md)
 
