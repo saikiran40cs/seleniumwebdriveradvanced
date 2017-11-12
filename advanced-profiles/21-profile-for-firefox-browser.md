@@ -65,10 +65,10 @@ public class ProxiesCertificates {
         fp.setPreference("setAcceptUntrustedCertificates", "true");
         fp.setAcceptUntrustedCertificates(true);
         fp.setAssumeUntrustedCertificateIssuer(true);
-        
+
         fp.clean(null);
         //0- Desktop, 1-Browser's Default Path , 2- Custom Download Path
-        fp.setPreference("browser.download.folderList", 2);	
+        fp.setPreference("browser.download.folderList", 2);    
         fp.setPreference("plugin.scan.plid.all", false);
         fp.setPreference("pdfjs.disabled", true);
         fp.setPreference("plugin.scan.Acrobat", "99");
@@ -89,7 +89,7 @@ public class ProxiesCertificates {
         fp.setPreference("network.proxy.type", proxyType);
         fp.setPreference("services.sync.prefs.sync.browser.download.manager.showWhenStarting", false);
         fp.setPreference("plugin.disable_full_page_plugin_for_types", "application/pdf");
-        
+
         // Create browser instance with above mentioned requsites
         driver = new FirefoxDriver(new FirefoxBinary(), fp, capabilities);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);

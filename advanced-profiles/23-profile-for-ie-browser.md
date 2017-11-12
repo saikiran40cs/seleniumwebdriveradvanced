@@ -30,6 +30,7 @@ public class ProxiesCertificates {
        DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
         // Set ACCEPT_SSL_CERTS variable to true
         ieCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        //To set the proxy to auto detect network settings
         ieCapabilities.setCapability("network.proxy.type", ProxyType.AUTODETECT.ordinal());
         //Added to avoid the Protected Mode settings for all zones
         ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true); 
@@ -37,7 +38,7 @@ public class ProxiesCertificates {
         ieCapabilities.setCapability(InternetExplorerDriver.SILENT, true);
         ieCapabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
         ieCapabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING,true);
-        System.setProperty("webdriver.ie.driver",IEDRIVERPATH);
+        System.setProperty("webdriver.ie.driver","C:\\SaiKiran\\Drivers\\IEDriverServer.exe");
         //Add Pop-up allowed in IE manually
         driver = new InternetExplorerDriver(ieCapabilities);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);

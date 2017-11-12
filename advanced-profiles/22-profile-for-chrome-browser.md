@@ -31,25 +31,26 @@ public class ProxiesCertificates {
         ChromeOptions chromeOptions = new ChromeOptions();
         DesiredCapabilities ChromeCapabilities = DesiredCapabilities.chrome();
         ChromeCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        ChromeCapabilities.setCapability("network.proxy.type", proxyType);
-        
+        //To set the proxy to auto detect network settings
+        ChromeCapabilities.setCapability("network.proxy.type", ProxyType.AUTODETECT.ordinal());
+
         // Set ACCEPT_SSL_CERTS variable to true
         ChromeCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         ChromeCapabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true); 
-        
+
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_settings.popups", 0);
         prefs.put("download.extensions_to_open", "pdf"); 
         //prefs.put("--always-authorize-plugins",true);
         prefs.put("download.prompt_for_download", "true");
         prefs.put("download.default_directory", DOWNLOADPATH);
-        
+
         chromeOptions.setExperimentalOption("prefs", prefs);
-        
-        System.setProperty("webdriver.chrome.driver",CHROMEDRIVERPATH);
+
+        System.setProperty("webdriver.chrome.driver","C:\\SaiKiran\\Drivers\\chromedriver.exe");
         System.setProperty("webdriver.chrome.args", "--disable-logging");
         System.setProperty("webdriver.chrome.silentOutput", "true");
-        
+
         driver = new ChromeDriver(ChromeCapabilities);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();

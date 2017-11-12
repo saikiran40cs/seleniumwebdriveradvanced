@@ -34,8 +34,8 @@ public class ProxiesCertificates {
 
         // Set ACCEPT_SSL_CERTS variable to true
         SafariCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        SafariCapabilities.setCapability("network.proxy.type", proxyType);
-
+        //To set the proxy to auto detect network settings
+        SafariCapabilities.setCapability("network.proxy.type", ProxyType.AUTODETECT.ordinal());
         driver = new SafariDriver(SafariCapabilities);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
