@@ -17,5 +17,6 @@
   * [3.1 Sample TestNG class](testng/31-sample-testng-class.md)
 * [4. ExtentReports](extentreports.md)
   * [4.1 Sample Extent Reports](extentreports/41-sample-extent-reports.md)
+* [Extent Reports Basics](extentreports/extent-reports-basics.md)
 * [Advanced tricks](advanced-tricks.md)
 
