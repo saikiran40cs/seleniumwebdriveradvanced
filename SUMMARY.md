@@ -19,4 +19,6 @@
   * [4.2 Sample Extent Reports](extentreports/42-sample-extent-reports.md)
 * [5. Advanced tricks](advanced-tricks.md)
   * [5.1 Keystroke handling](advanced-tricks/keystroke-handling.md)
+  * [5.2 Screenshot capture](advanced-tricks/screenshot-capture.md)
+  * te
 
