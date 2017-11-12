@@ -16,7 +16,7 @@
 * [3. TestNG](testng.md)
   * [3.1 Sample TestNG class](testng/31-sample-testng-class.md)
 * [4. ExtentReports](extentreports.md)
-  * [4.2 Sample Extent Reports](extentreports/42-sample-extent-reports.md)
+  * [4.1 Basics](extentreports/41-extent-reports-basics.md)
 * [5. Advanced tricks](advanced-tricks.md)
   * [5.1 Keystroke handling](advanced-tricks/keystroke-handling.md)
   * [5.2 Screenshot capture](advanced-tricks/screenshot-capture.md)

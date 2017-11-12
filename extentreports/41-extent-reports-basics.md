@@ -1,3 +1,7 @@
+# Basics for Extent Reports version 2
+
+---
+
 ### Initializing Report {#initialize-report}
 
 To initialize the report, you must create an instance of`ExtentReports`. It is possible to initialize in the following different ways:
@@ -592,6 +596,77 @@ Close
 )
 ;
 ```
+
+
+
+     Initializing Report
+
+To initialize the report, you must create an instance of`ExtentReports`. It is possible to initialize in the following different ways:
+
+```
+
+var extent 
+=
+ExtentReports
+(
+string filePath
+)
+
+var extent 
+=
+ExtentReports
+(
+string filePath
+,
+ bool replaceExisting
+)
+
+var extent 
+=
+ExtentReports
+(
+string filePath
+,
+ DisplayOrder displayOrder
+)
+
+var extent 
+=
+ExtentReports
+(
+string filePath
+,
+ DisplayOrder displayOrder
+,
+ bool replaceExisting
+)
+```
+
+* **filePath**
+  - path of the file, in .htm or .html format
+* **replaceExisting**
+  - Setting to overwrite \(TRUE\) the existing file or append to it
+  * True \(default\): the file will be replaced with brand new markup, and all existing data will be lost. Use this option to create a brand new report
+  * False: existing data will remain, new tests will be appended to the existing report. If the the supplied path does not exist, a new file will be created.
+* **displayOrder**
+  * OLDEST\_FIRST \(default\) - oldest test at the top, newest at the end
+  * NEWEST\_FIRST - newest test at the top, oldest at the endTo initialise thextenreports
+* Initializing Report
+  To initialize the report, you must create an instance of ExtentReports. It is possible to initialize in the following different ways:
+
+
+  var extent = ExtentReports\(string filePath\)
+  var extent = ExtentReports\(string filePath, bool replaceExisting\)
+  var extent = ExtentReports\(string filePath, DisplayOrder displayOrder\)
+  var extent = ExtentReports\(string filePath, DisplayOrder displayOrder, bool replaceExisting\)
+  filePath - path of the file, in .htm or .html format
+  replaceExisting - Setting to overwrite \(TRUE\) the existing file or append to it
+  True \(default\): the file will be replaced with brand new markup, and all existing data will be lost. Use this option to create a brand new report
+  False: existing data will remain, new tests will be appended to the existing report. If the the supplied path does not exist, a new file will be created.
+  displayOrder
+  OLDEST\_FIRST \(default\) - oldest test at the top, newest at the end
+  NEWEST\_FIRST - newest test at the top, oldest at the end
+* .
 
 
 
