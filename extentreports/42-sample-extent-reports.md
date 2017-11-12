@@ -1,10 +1,10 @@
-# Sample Extent Reports
+# Extent Reports
 
 ---
 
 Extent Reports is a multi-format reporting library for Java Developers which creates an interactive HTML report, an email report, and also provides real-time log information. The ExtentAPI also integrates with the ExtentX server to provide in-depth views of your tests.Extent addresses the reporting issues in TestNG.
 
- Below is the code which can be used to run tests
+Below is the code which can be used to run tests
 
 ```
 package code;
@@ -60,7 +60,6 @@ class ExtentReports {
         test.assignCategory("RegressionTestCases");
         }
     }
-
 ```
 
 We need to keep in mind that the extent reports must be under @Test annotation of TestNG otherwise it will not generate the reports.
