@@ -31,13 +31,13 @@ public class ProxiesCertificates {
         OperaOptions operaOptions = new OperaOptions();
         DesiredCapabilities OperaCapabilities = DesiredCapabilities.chrome();
         OperaCapabilities.setCapability(ChromeOptions.CAPABILITY, operaOptions);
-        
+
         //To set the proxy to auto detect network settings
         OperaCapabilities.setCapability("network.proxy.type", ProxyType.AUTODETECT.ordinal());
-        
+
         // Set ACCEPT_SSL_CERTS variable to true
         OperaCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-
+        // Set Driver path
         System.setProperty("webdriver.opera.driver","C:\\SaiKiran\\Drivers\\operadriver.exe");
         System.setProperty("opera.arguments", "--disable-logging");
         System.setProperty("webdriver.opera.silentOutput", "true");
