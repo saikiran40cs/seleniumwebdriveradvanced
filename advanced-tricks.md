@@ -2,25 +2,23 @@
 
 ---
 
-I am going to share with you some Advanced WebDriver usages in tests. 
+I am going to share with you some Advanced WebDriver usages in tests.
 
+* Entering keystrokes from keyboard
+* Taking a Screenshot
+* Get HTML Source of WebElement
+* Execute JavaScript
+* Execute Tests in a Headless Browser
+* Check If an Element Is Visible
+* Use Specific Profile
+* Turn Off JavaScript
+* Manage Cookies
 
-
-1. Entering keystrokes from keyboard
-2. Taking a Screenshot
-3. Get HTML Source of WebElement
-4. Execute JavaScript
-5. Execute Tests in a Headless Browser
-6. Check If an Element Is Visible
-7. Use Specific Profile
-8. Turn Off JavaScript
-9. Manage Cookies
-
-* Add a New Cookie
-* Get All Cookies
-* Delete a Cookie by Name
-* Delete All Cookies
-* Get a Cookie by Name
+1. Add a New Cookie
+2. Get All Cookies
+3. Delete a Cookie by Name
+4. Delete All Cookies
+5. Get a Cookie by Name
 
 
 
