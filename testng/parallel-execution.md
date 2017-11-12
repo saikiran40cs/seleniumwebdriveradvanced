@@ -1,4 +1,4 @@
-# Parallel WebDriver executions using TestNG {#simple-testng-class}
+# Parallel WebDriver executions  {#simple-testng-class}
 
 ---
 
@@ -19,12 +19,12 @@ Here’s how the Factory class will look like:
 
 ```
 package kiran.chaos;
- 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
- 
+
 class LocalDriverFactory {
     static WebDriver createInstance(String browserName) {
         WebDriver driver = null;
@@ -55,14 +55,14 @@ The code would look like below :
 package kiran.chaos;
 
 import org.openqa.selenium.WebDriver;
- 
+
 public class LocalDriverManager {
     private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
- 
+
     public static WebDriver getDriver() {
         return webDriver.get();
     }
- 
+
     static void setWebDriver(WebDriver driver) {
         webDriver.set(driver);
     }
@@ -82,9 +82,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
- 
+
 public class WebDriverListener implements IInvokedMethodListener {
- 
+
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
@@ -93,7 +93,7 @@ public class WebDriverListener implements IInvokedMethodListener {
             LocalDriverManager.setWebDriver(driver);
         }
     }
- 
+
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
@@ -112,24 +112,24 @@ Now that we have shown all of the ingredients, lets take a look at a sample test
 package kiran.chaos;
 
 import org.testng.annotations.Test;
- 
+
 public class ThreadLocalDemo {
     @Test
     public void testMethod1() {
         invokeBrowser("http://www.ndtv.com");
     }
- 
+
     @Test
     public void testMethod2() {
         invokeBrowser("http://www.facebook.com");
- 
+
     }
- 
+
     private void invokeBrowser(String url) {
         System.out.println("Thread id = " + Thread.currentThread().getId());
         System.out.println("Hashcode of webDriver instance = " + LocalDriverManager.getDriver().hashCode());
         LocalDriverManager.getDriver().get(url);
- 
+
     }
 }
 ```
