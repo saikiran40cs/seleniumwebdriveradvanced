@@ -15,6 +15,7 @@
   * [2.5 Profile for Opera Browser](advanced-profiles/25-profile-for-opera-browser.md)
 * [3. TestNG](testng.md)
   * [3.1 Sample TestNG class](testng/31-sample-testng-class.md)
+  * [Parallel execution](testng/parallel-execution.md)
 * [4. ExtentReports](extentreports.md)
   * [4.1 Basics](extentreports/41-extent-reports-basics.md)
 * [5. Advanced tricks](advanced-tricks.md)
