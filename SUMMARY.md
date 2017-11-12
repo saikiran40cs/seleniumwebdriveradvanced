@@ -20,5 +20,5 @@
 * [5. Advanced tricks](advanced-tricks.md)
   * [5.1 Keystroke handling](advanced-tricks/keystroke-handling.md)
   * [5.2 Screenshot capture](advanced-tricks/screenshot-capture.md)
-  * te
+  * [5.3 Get HTML Source of WebElement](advanced-tricks/get-inner-source.md)
 

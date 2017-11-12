@@ -25,7 +25,7 @@ public void TakeScreenshotOfElement(IWebDriver driver, By by, string fileName)
  var screenshotDriver = driver as ITakesScreenshot;
  Screenshot screenshot = screenshotDriver.GetScreenshot();
  var bmpScreen = new Bitmap(new MemoryStream(screenshot.AsByteArray));
- 
+
  // 2. Get screenshot of specific element
  IWebElement element = driver.FindElement(by);
  var cropArea = new Rectangle(element.Location, element.Size);
@@ -34,7 +34,7 @@ public void TakeScreenshotOfElement(IWebDriver driver, By by, string fileName)
 }
 ```
 
-First we make a full-screen screenshot then we locate the specified element by its location and size attributes. After that, the found rectangle chunk is saved as a bitmap.
+First we make a full-screen screenshot then we locate the specified element by its location and size attributes. After that, the found rectangle chunk is saved as a bitmap.
 
 Here is how you use both methods in tests.
 
@@ -54,11 +54,9 @@ public void WebDriverAdvancedUsage_TakingElementScreenshot()
  this.driver.Navigate().GoToUrl(@"https://saikiranpro.blogspot.in/");
  this.WaitUntilLoaded();
  string tempFilePath = Path.GetTempFileName().Replace(".tmp", ".png");
- this.TakeScreenshotOfElement(this.driver,By.XPath("//h3[text()='About Me '"), tempFilePath);
+ this.TakeScreenshotOfElement(this.driver,By.XPath("//h3[text()='About Me ']"), tempFilePath);
 }
 ```
 
-We get a temp file name through the special "Path" .NET class. By default temp files are generated with ".tmp" extension because of that we replace it with ".png".
-
-
+We get a temp file name through the special "Path" .NET class. By default temp files are generated with ".tmp" extension because of that we replace it with ".png".
 
