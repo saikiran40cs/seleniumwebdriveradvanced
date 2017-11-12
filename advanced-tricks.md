@@ -14,11 +14,15 @@ I am going to share with you some Advanced WebDriver usages in tests.
 * Turn Off JavaScript
 * Manage Cookies
 
-1. Add a New Cookie
-2. Get All Cookies
-3. Delete a Cookie by Name
-4. Delete All Cookies
-5. Get a Cookie by Name
+> Add a New Cookie
+>
+> Get All Cookies
+>
+> Delete a Cookie by Name
+>
+> Delete All Cookies
+
+> Get a Cookie by Name
 
 
 
