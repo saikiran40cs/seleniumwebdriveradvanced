@@ -16,6 +16,7 @@
 * [3. TestNG](testng.md)
   * [3.1 Sample TestNG class](testng/31-sample-testng-class.md)
   * [3.2 Parallel execution](testng/parallel-execution.md)
+  * [3.3 TestNG Batch execution](testng/batch-execution.md)
 * [4. ExtentReports](extentreports.md)
   * [4.1 Basics](extentreports/41-extent-reports-basics.md)
   * [4.2 Sample Extent Reports](extentreports/42-sample-extent-reports.md)
